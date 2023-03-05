@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ajax Text</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div id="main">
+    This is the original text when the page first loads.
+  </div>
+
+  <button id="ajax-button" type="button">Update content with Ajax</button>
+
+  <script>
+    $("#ajax-button").click(function () {
+      $.get({
+        url: "new_content.txt",
+        dataType: "text",
+        success: function (data) {
+          $("#main").html(data);
+        },
+        error: function (jqxhr, textStatus, error) { }
+      })
+    });
+  </script>
+
+</body>
+
+</html>

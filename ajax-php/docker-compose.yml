@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+  php:
+    image: php-local
+    build: ../docker/php
+    ports:
+      - 80:80
+    container_name: ${APP_NAME}-php
+    restart: always
+    volumes: 
+      - ./exercises:/var/www/html

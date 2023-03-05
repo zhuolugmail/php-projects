@@ -1,0 +1,72 @@
+/* General styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#main {
+  margin: 0;
+  padding: 0;
+  width: 1080px;
+}
+
+#header,
+#footer {
+  height: 30px;
+  width: 100%;
+  background: #30395C;
+  padding: 2em;
+}
+
+#page-content {
+  height: 500px;
+  width: 100%;
+  background: #DDF1FF;
+  padding: 2em;
+}
+
+#navigation {
+  float: left;
+}
+
+#navigation a {
+  font-size: 20px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+#navigation a:hover {
+  color: #DDF1FF;
+}
+
+#search-area {
+  float: right;
+}
+
+input#search {
+  width: 200px;
+}
+
+/* Auto-suggest styles */
+ul#suggestions {
+  list-style: none;
+  margin-top: 0.2rem;
+  margin: 0;
+  padding: 0;
+  width: 210px;
+}
+
+ul#suggestions li a {
+  color: black;
+  background-color: lightgray;
+  display: block;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  text-decoration: none;
+}
+
+ul#suggestions li a:hover {
+  background-color: gray;
+}
