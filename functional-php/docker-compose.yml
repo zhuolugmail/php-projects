@@ -1,0 +1,8 @@
+version: '3.6'
+services:
+  php:
+    image: composer:2.5
+    container_name: ${APP_NAME}-php
+    volumes: 
+      - ./workarea:/app
+    command: tail -f /dev/null
